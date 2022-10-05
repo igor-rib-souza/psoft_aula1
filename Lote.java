@@ -9,4 +9,8 @@ public class Lote {
         this.dataV=dataV;
         this.produto=produto;
     }
+
+    public Date getValidade() {
+        return this.dataV;
+    }
 }

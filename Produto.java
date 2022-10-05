@@ -9,6 +9,10 @@ public class Produto {
         this.preco=preco;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public void getProduto(){
         System.out.println(name);
     }

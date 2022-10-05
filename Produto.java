@@ -9,6 +9,12 @@ public class Produto {
         this.preco=preco;
     }
 
+    public Produto() {
+        this.name=null;
+        this.fabricante=null;
+        this.preco=null;
+    }
+
     public String getName() {
         return this.name;
     }

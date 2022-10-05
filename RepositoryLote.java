@@ -10,6 +10,8 @@ public class RepositoryLote {
     }
 
     public void getLotes(){
-        System.out.println(estoque);
+        for (Date key : estoque.keySet()){
+            System.out.println(estoque.get(key).produto.name);
+        }
     }
 }

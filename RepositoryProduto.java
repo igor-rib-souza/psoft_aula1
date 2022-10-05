@@ -10,6 +10,9 @@ public class RepositoryProduto {
     }
 
     public void getProdutos(){
-        System.out.println(estoque);
+        for (String key : estoque.keySet()){
+            System.out.println(estoque.get(key).name);
+        }
+
     }
 }

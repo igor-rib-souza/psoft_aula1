@@ -12,4 +12,8 @@ public class LoteServices {
         String dataV = sc.nextLine();
         estoqueLote.addLote(new Lote(quantidade,dataV,new Produto()));
     }
+
+    public void listaServices() {
+        estoqueLote.getLotes();
+    }
 }

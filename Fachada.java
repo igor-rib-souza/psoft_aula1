@@ -14,8 +14,10 @@ public class Fachada {
     }
 
     public void listaProdutos() {
+        prodServices.listaProdutos();
     }
 
     public void listaLotes() {
+        loteServices.listaServices();
     }
 }

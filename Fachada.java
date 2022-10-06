@@ -2,23 +2,15 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Fachada {
-
-    Scanner sc = new Scanner(System.in);
-    RepositoryProduto estoqueProduto = new RepositoryProduto();
-    RepositoryLote estoqueLote = new RepositoryLote();
+    private final LoteServices loteServices = new LoteServices();
+    private final ProdServices prodServices = new ProdServices();
 
     public void cadastraProduto() {
-        String nome = sc.nextLine();
-        String fabricante = sc.nextLine();
-        Double preco = sc.nextDouble();
-        estoqueProduto.addProduto(new Produto(nome,fabricante,preco));
-
+        prodServices.cadastraProduto();
     }
 
     public void cadastraLote() {
-        Integer quantidade = sc.nextInt();
-        String dataV = sc.nextLine();
-        estoqueLote.addLote(new Lote(quantidade,dataV,new Produto()));
+        loteServices.cadastraLote();
     }
 
     public void listaProdutos() {
